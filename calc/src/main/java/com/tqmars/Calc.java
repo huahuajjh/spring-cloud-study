@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Calc {
     @RequestMapping(value = "/add",method = RequestMethod.GET)
     public Integer add(@RequestParam Integer num1, @RequestParam Integer num2){
+        System.out.println("calc");
         return num1 + num2;
     }
 }
